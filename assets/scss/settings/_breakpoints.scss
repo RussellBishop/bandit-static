@@ -1,0 +1,11 @@
+$breakpoint-max: 456px;
+
+$iota-global-breakpoints: (
+
+  uptomax:
+  'screen and (max-width: '$breakpoint-max - 1')',
+
+  frommax:
+  'screen and (min-width: '$breakpoint-max')',
+
+);

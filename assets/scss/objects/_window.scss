@@ -1,0 +1,18 @@
+/**
+ * .o-window
+ * Window component - where the UI starts and ends.
+ *
+ * Used:
+ * here, here and here.
+ */
+
+$object: 'window';
+
+#{'.' + $iota-global-objects-namespace + $object} {
+  width: var(--WindowWidth);
+  @extend .u-mh-auto;
+  @extend .u-minh-90vh;
+  @extend .u-flex;
+  @extend .u-fd-col;
+  @extend .u-bgcolor-fold;
+}

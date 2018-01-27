@@ -1,0 +1,110 @@
+// position, visibility, overflow, display
+// flex-direction, align-content, align-items, align-self, justify-content,
+// appearance, float,
+// backgound-color, background-position, background-attachment, background-repeat, background-size, background-blend-mode,
+// font-family, font-weight [bold/light...]
+// color,
+// box-shadow,
+// list-style*, text-align, text-decoration, text-overflow, text-transform, white-space,
+// will-change, cursor, pointer-events
+
+$wordUtilitiesSettings: (
+  (
+    property: 'display',
+    propertyClass: '',
+
+    values: (
+      (
+        value: 'flex',
+      ),
+    ),
+  ),
+  (
+    property: 'flex-direction',
+    propertyClass: 'fd-',
+
+    values: (
+      (
+        value: 'column',
+        valueClass: 'col',
+      ),
+    ),
+  ),
+  (
+    property: 'justify-content',
+    propertyClass: 'jc-',
+
+    values: (
+      (
+        value: 'space-between',
+        valueClass: 'between',
+      ),
+    ),
+  ),
+  (
+    property: 'align-items',
+    propertyClass: 'ai-',
+
+    values: (
+      (
+        value: 'center',
+      ),
+    ),
+  ),
+  (
+    property: 'background-color',
+    propertyClass: 'bgcolor-',
+
+    values: (
+      (
+        value: $colour-basement,
+        valueClass: 'basement',
+      ),
+      (
+        value: $colour-fold,
+        valueClass: 'fold',
+      ),
+      (
+        value: $colour-floor,
+        valueClass: 'floor',
+      ),
+    ),
+  ),
+  (
+    property: 'color',
+    propertyClass: 'color-',
+
+    values: (
+      (
+        value: $colour-blanket,
+        valueClass: 'blanket',
+      ),
+      (
+        value: $colour-white,
+        valueClass: 'white',
+      ),
+    ),
+  ),
+  (
+    property: 'font-family',
+    propertyClass: 'font-',
+
+    values: (
+      (
+        value: '"Europa", Helvetica',
+        valueClass: 'europa',
+      ),
+    ),
+  ),
+  (
+    property: 'border-radius',
+    propertyClass: 'borrad-',
+
+    values: (
+      (
+        value: 6px,
+        valueClass: 6,
+      ),
+    ),
+  ),
+);

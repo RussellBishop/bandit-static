@@ -1,0 +1,77 @@
+/*
+
+// top, right, bottom, left
+// width, min-width, max-width, // height, min-height, max-height,
+// margin..., padding...,
+
+*/
+
+$unitUtilitiesSettings: (
+  ( property: 'width',
+    propertyClass: '',
+
+    // units: (
+    //   (
+    //     unit: 'cspan',
+    //     unitClass: 'cspan',
+
+    //     values: (
+    //       (
+    //         value: columnspan(2),
+    //         valueClass: '2',
+
+    //         responsive:
+    //         (
+    //           'smalltomed',
+    //         ),
+    //       ),
+    //     ),
+    //   ),
+    // ),
+  ),
+  ( property: ('margin-right', 'margin-left'),
+    propertyClass: 'mh-',
+
+    keywords: (
+      (
+        keyword: 'auto',
+      ),
+    ),
+  ),
+  ( property: ('padding-top', 'padding-bottom'),
+    propertyClass: 'pv-',
+
+    units: (
+      (
+        unit: 'baseline',
+        unitClass: 'bl',
+
+        values: (
+          (
+            value: calc(var(--Baseline) * 1),
+            valueClass: '1',
+          ),
+          (
+            value: calc(var(--Baseline) * 2),
+            valueClass: '2',
+          ),
+        ),
+      ),
+    ),
+  ),
+  ( property: 'min-height',
+    propertyClass: 'minh-',
+
+    units: (
+      (
+        unit: 'vh',
+
+        values: (
+          (
+            value: 90,
+          ),
+        ),
+      ),
+    ),
+  ),
+);

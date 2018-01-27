@@ -1,0 +1,22 @@
+:root {
+  // --ColumnCount: 12;
+  // --ColumnDecimal: .07;
+
+  // --GutterCount: calc(var(--ColumnCount) - 1);
+  // --GutterDecimal: calc((1 - (var(--ColumnCount) * var(--ColumnDecimal))) / var(--GutterCount));
+
+  // --ColumnUnit: calc(var(--ColumnDecimal) * var(--ContainerWidth));
+  // --GutterUnit: calc(var(--GutterDecimal) * var(--ContainerWidth));
+
+
+  --Gutter: 12px; // this needs to refer to font size eventually (12 / fontsize at largest)
+  --Baseline: var(--Gutter);
+
+  --ViewportWidth: 100vw;
+  --WindowWidth: calc(var(--ViewportWidth) - (var(--Gutter) * 2));
+  --ContainerWidth: calc(var(--WindowWidth) - (var(--Gutter) * 2));
+
+  @include iota-breakpoint(frommax) {
+    --ViewportWidth: 465px;
+  }
+}

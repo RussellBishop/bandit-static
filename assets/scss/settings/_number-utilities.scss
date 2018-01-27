@@ -1,0 +1,40 @@
+/**
+ * Number Utilities
+ * - optional: Ranges of Numbers
+ * - optional: Steps within ranges.
+
+ * Classes
+ * - z-index
+ * - opacity
+ * - order
+ * - flex-grow
+ * - flex-shrink
+ * - font-weight
+ */
+
+$numberUtilitiesSettings: (
+  ( property: 'flex-grow',
+    propertyClass: 'grow-',
+
+    values: (
+      (
+        value: 0,
+      ),
+      (
+        value: 1,
+      ),
+    ),
+  ),
+  ( property: 'flex-shrink',
+    propertyClass: 'shrink-',
+
+    values: (
+      (
+        value: 0,
+      ),
+      (
+        value: 1,
+      ),
+    ),
+  ),
+);
