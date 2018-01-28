@@ -1,29 +1,113 @@
 $combinatorUtilitiesSettings: (
-  // ( combinator: '> * + *',
-  //   properties: (
-  //     ( property: 'margin-top',
-  //       propertyClass: 'vspace-',
+  ( combinator: '> * + *',
+    properties: (
+      ( property: 'margin-top',
+        propertyClass: 'vspace-',
 
-  //       units: (
-  //         (
-  //           unit: 'rem',
-  //           unitClass: 'r',
+        units: (
+          (
+            unit: 'rem',
+            unitClass: 'r',
 
-  //           values: (
-  //             (
-  //               value: 1,
-  //             ),
-  //             (
-  //               value: 2,
-  //               responsive:
-  //               (
-  //                 'smalltomed', 'medtomax',
-  //               ),
-  //             ),
-  //           ),
-  //         ),
-  //       ),
-  //     ),
-  //   ),
-  // ),
+            values: (
+              (
+                value: .3,
+                valueClass: '03',
+              ),
+            ),
+          ),
+          (
+            unit: 'baseline',
+            unitClass: 'bl',
+
+            values: (
+              (
+                value: calc(var(--Baseline) * 3),
+                valueClass: '3',
+              ),
+            ),
+          ),
+          (
+            unit: 'px',
+
+            values: (
+              (
+                value: 1,
+              ),
+            ),
+          ),
+        ),
+      ),
+      ( property: 'margin-left',
+        propertyClass: 'hspace-',
+
+        units: (
+          (
+            unit: 'baseline',
+            unitClass: 'bl',
+
+            values: (
+              (
+                value: calc(var(--Baseline) * 1),
+                valueClass: '1',
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  ( combinator: '> *',
+    properties: (
+      ( property: 'margin-top',
+        propertyClass: 'vspace-all-',
+
+        units: (
+
+        ),
+      ),
+    ),
+  ),
+  ( combinator: '> *:first-child',
+    properties: (
+      ( property: 'border-radius',
+        propertyClass: 'borrad-first-',
+
+        units: (
+          (
+            unit: 'px',
+            unitClass: '',
+
+            values: (
+              (
+                value: '2px 2px 0 0',
+                valueClass: '2200',
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  ( combinator: '> *:last-child',
+    properties: (
+      ( property: 'border-radius',
+        propertyClass: 'borrad-last-',
+
+        units: (
+          (
+            unit: 'px',
+            unitClass: '',
+
+            values: (
+              (
+                value: '0 0 2px 2px',
+                valueClass: '0022',
+              ),
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
 );

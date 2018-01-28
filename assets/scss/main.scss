@@ -6,6 +6,7 @@
 @import 'tools/combinator-utilities';
 @import 'tools/unit-utilities';
 @import 'tools/number-utilities';
+@import 'tools/aspect-ratio';
 // @import 'tools/ms';
 
 @import 'settings/classes';
@@ -13,13 +14,13 @@
 @import 'settings/breakpoints';
 @import 'settings/classes';
 @import 'settings/grid';
+@import 'settings/aspect-ratio';
+@import 'settings/container';
+@import 'settings/type';
 @import 'settings/word-utilities';
 @import 'settings/unit-utilities';
 @import 'settings/number-utilities';
 @import 'settings/combinator-utilities';
-
-@import 'settings/container';
-// @import 'settings/type';
 
 @import 'base/reset';
 @import 'base/type';
@@ -31,6 +32,9 @@
 
 @import 'objects/window';
 @import 'objects/container';
-@import 'objects/type';
+@import 'objects/dictate';
+@import 'objects/ellipsis';
+// @import 'objects/type';
 
-// @import 'components/put-them-here';
+@import 'components/player-photo';
+@import 'components/button';

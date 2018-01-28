@@ -37,4 +37,70 @@ $numberUtilitiesSettings: (
       ),
     ),
   ),
+  ( property: 'flex-basis',
+    propertyClass: 'basis-',
+
+    values: (
+      (
+        value: 0,
+      ),
+      (
+        value: 1,
+      ),
+    ),
+  ),
+  ( property: 'opacity',
+    propertyClass: 'opac-',
+
+    values: (
+      (
+        value: 0.5,
+        valueClass: '05',
+      ),
+      (
+        value: 1,
+        pseudo: ('hover', 'focus'),
+      ),
+    ),
+  ),
+  ( property: 'order',
+    propertyClass: 'order-',
+
+    values: (
+      (
+        value: 1,
+      ),
+      (
+        value: 2,
+      ),
+      (
+        value: 3,
+      ),
+    ),
+  ),
+  ( property: 'font-weight',
+    propertyClass: 'weight-',
+
+    values: (
+      (
+        value: bold,
+      ),
+    ),
+  ),
+
+  (
+    property: 'border-radius',
+    propertyClass: 'borrad-',
+
+    values: (
+      (
+        value: '3px',
+        valueClass: '3',
+      ),
+      (
+        value: '3px 3px 0 0',
+        valueClass: '3300',
+      ),
+    ),
+  ),
 );

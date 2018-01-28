@@ -65,6 +65,31 @@
             }
           }
         }
+
+        @if map-has-key($valueSetting, pseudo) {
+
+          @each $pseudo in map-get($valueSetting, pseudo) {
+
+            @if (type_of($pseudo) == list) {
+
+              $pseudoClass: str-replace(to-string($pseudo), '" ', '');
+
+              @each $pseudoName in $pseudo {
+
+                #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass + $iota-global-pseudo-separator + $pseudoClass + ':' + $pseudoName} {
+
+                  @extend #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass} !optional;
+                }
+              }
+            }
+
+            @else {
+              #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass + $iota-global-pseudo-separator + $pseudo + ':' + $pseudo} {
+                @extend #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass} !optional;
+              }
+            }
+          }
+        }
       }
     }
   }

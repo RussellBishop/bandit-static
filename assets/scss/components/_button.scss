@@ -1,0 +1,49 @@
+/**
+ * .c-button
+ */
+
+$component: 'button';
+
+#{'.' + $iota-global-components-namespace + $component} {
+  @extend .u-pos-relative;
+  @extend .u-flex;
+  @extend .u-ai-center;
+  @extend .u-jc-around;
+  @extend .u-borrad-3;
+  @extend .u-color-white;
+  @extend .u-size-h4;
+  @extend .u-weight-bold;
+  @extend .u-align-center;
+  @extend .u-pv-1bl;
+  box-shadow: 0 3px 10px 0 rgba(0,0,0, .50), inset 0 2px 0 0 #626F94;
+  border-top: 2px solid #F29E44;
+  border-bottom: 2px solid #FF7048;
+  letter-spacing: -0.5px;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, #F29E44, #FF7048) 1 100%;
+    content: '';
+  }
+
+  &:not(:hover):not(:focus) {
+    @extend .u-bgcolor-floor;
+  }
+
+  &:hover,
+  &:focus {
+    @extend .u-bgcolor-deepblue;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0, .50);
+  }
+
+  &:active {
+    @extend .u-bgcolor-mariana;
+    box-shadow: 0 -3px 10px 0 rgba(0,2,7,0.25), inset 0 7px 10px 0 rgba(0,2,7,0.39);
+  }
+}

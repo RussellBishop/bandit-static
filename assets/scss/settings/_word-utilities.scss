@@ -10,12 +10,48 @@
 
 $wordUtilitiesSettings: (
   (
+    property: 'overflow',
+    propertyClass: 'ov-',
+
+    values: (
+      (
+        value: 'hidden',
+      ),
+    ),
+  ),
+  (
+    property: 'overflow-x',
+    propertyClass: 'ovx-',
+
+    values: (
+      (
+        value: 'auto',
+      ),
+    ),
+  ),
+  (
+    property: 'position',
+    propertyClass: 'pos-',
+
+    values: (
+      (
+        value: 'absolute',
+      ),
+      (
+        value: 'relative',
+      ),
+    ),
+  ),
+  (
     property: 'display',
     propertyClass: '',
 
     values: (
       (
         value: 'flex',
+      ),
+      (
+        value: 'block',
       ),
     ),
   ),
@@ -38,6 +74,10 @@ $wordUtilitiesSettings: (
       (
         value: 'space-between',
         valueClass: 'between',
+      ),
+      (
+        value: 'space-around',
+        valueClass: 'around',
       ),
     ),
   ),
@@ -68,6 +108,30 @@ $wordUtilitiesSettings: (
         value: $colour-floor,
         valueClass: 'floor',
       ),
+      (
+        value: $colour-floor05,
+        valueClass: 'floor05',
+
+        pseudo: ('hover', 'focus'),
+      ),
+      (
+        value: $colour-deepblue,
+        valueClass: 'deepblue',
+      ),
+      (
+        value: $colour-mariana,
+        valueClass: 'mariana',
+      ),
+    ),
+  ),
+  (
+    property: 'background-size',
+    propertyClass: '',
+
+    values: (
+      (
+        value: 'cover',
+      ),
     ),
   ),
   (
@@ -82,6 +146,23 @@ $wordUtilitiesSettings: (
       (
         value: $colour-white,
         valueClass: 'white',
+        pseudo: ('hover', 'focus'),
+      ),
+      (
+        value: $colour-paste,
+        valueClass: 'paste',
+      ),
+      (
+        value: $colour-steam,
+        valueClass: 'steam',
+      ),
+      (
+        value: $colour-win,
+        valueClass: 'win',
+      ),
+      (
+        value: $colour-orange,
+        valueClass: 'orange',
       ),
     ),
   ),
@@ -91,19 +172,45 @@ $wordUtilitiesSettings: (
 
     values: (
       (
-        value: '"Europa", Helvetica',
+        value: 'europa, Europa, Helvetica',
         valueClass: 'europa',
       ),
     ),
   ),
   (
-    property: 'border-radius',
-    propertyClass: 'borrad-',
+    property: 'text-align',
+    propertyClass: 'align-',
 
     values: (
       (
-        value: 6px,
-        valueClass: 6,
+        value: 'left',
+      ),
+      (
+        value: 'center',
+      ),
+      (
+        value: 'right',
+      ),
+    ),
+  ),
+  (
+    property: 'text-transform',
+    propertyClass: '',
+
+    values: (
+      (
+        value: 'uppercase',
+      ),
+    ),
+  ),
+  (
+    property: 'white-space',
+    propertyClass: 'ws-',
+
+    values: (
+      (
+        value: nowrap,
+        valueClass: no,
       ),
     ),
   ),

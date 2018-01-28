@@ -39,17 +39,25 @@
         }
       }
 
+
       @if map-has-key($valueSetting, pseudo) {
 
         @each $pseudo in map-get($valueSetting, pseudo) {
+          // @debug $pseudo;
 
           @if (type_of($pseudo) == list) {
 
+            @debug $pseudo;
+
             $pseudoClass: str-replace(to-string($pseudo), '" ', '');
+            @debug $pseudo;
+            @debug type_of($pseduo);
+            @debug $pseudoClass;
 
             @each $pseudoName in $pseudo {
 
               #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass + $iota-global-pseudo-separator + $pseudoClass + ':' + $pseudoName} {
+
                 @extend #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass} !optional;
               }
             }
@@ -57,6 +65,7 @@
 
           @else {
             #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass + $iota-global-pseudo-separator + $pseudo + ':' + $pseudo} {
+
               @extend #{'.' + $iota-global-utilities-namespace + $propertyClass + $valueClass} !optional;
             }
           }
