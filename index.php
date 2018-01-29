@@ -30,7 +30,9 @@
                 </a>
 
                 <a href="/user" class="u-flex u-ai-center">
-                    <div class="c-player-photo u-width-2bl u-mr-1bl" aria-hidden="true" style="background-image: url('https://pbs.twimg.com/profile_images/948246178948362241/UJO1XYgk_400x400.jpg');"></div>
+                    <div class="c-player-photo u-width-2bl u-mr-1bl" aria-hidden="true" style="background-image: url('https://pbs.twimg.com/profile_images/948246178948362241/UJO1XYgk_400x400.jpg');">
+
+                    </div>
                     <span class="u-color-orange u-uppercase u-weight-bold">Stephen</span>
                 </a>
             </div>
@@ -96,7 +98,7 @@
                 </ol>
 
                 <footer class="u-ph-1bl">
-                    <a href="/results" class="c-button u-mt-1bl">Add results</a>
+                    <a href="/results" class="c-button c-button--default u-mt-1bl">Add results</a>
                 </footer>
 
             </section>

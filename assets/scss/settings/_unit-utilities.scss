@@ -41,6 +41,19 @@ $unitUtilitiesSettings: (
   ( property: 'height',
     propertyClass: 'height-',
 
+    units: (
+      (
+        unit: '%',
+        unitClass: 'pc',
+
+        values: (
+          (
+            value: 100,
+          ),
+        ),
+      ),
+    ),
+
     keywords: (
       (
         keyword: 'auto',

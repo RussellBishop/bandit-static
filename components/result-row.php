@@ -4,6 +4,7 @@
         <div class="u-grow-1 u-basis-0 u-flex u-ai-center u-order-2 u-align-center u-hspace-1bl">
 
             <div class="c-player-photo u-width-3bl" aria-hidden="true" style="background-image: url('https://pbs.twimg.com/profile_images/948246178948362241/UJO1XYgk_400x400.jpg');">
+                <div class="c-player-photo__level"></div>
             </div>
 
             <dt class="u-size-h4 u-weight-bold u-ws-no">
