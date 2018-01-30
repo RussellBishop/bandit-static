@@ -7,33 +7,31 @@ $component: 'player-photo';
 #{'.' + $iota-global-components-namespace + $component} {
   @include aspect-ratio($aspect-player-photo);
   @extend .u-cover;
+  @extend .u-bgcolor-floor;
   clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
 
   &__level {
-    @extend .o-absolute-fill;
+    @extend .u-pos-absolute;
+    @extend .u-width-100pc;
+    @extend .u-height-100pc;
+    top: 0;
+    box-shadow: -4px -4px 5px rgba(#000, .35), -1px -1px 2px rgba(#000, .2); //replace with filter: dropshadow
 
-    &:after,
-    &:before {
-      @extend %no-content;
-      @extend .u-pos-absolute;
-      @extend .u-width-100pc;
-      @extend .u-height-100pc;
-      box-shadow: -4px -4px 5px rgba(#000, .35), -1px -1px 2px rgba(#000, .2);
-      background: red;
-    }
+    $distance: -25%;
 
-    // level thickness
-    $distance: -20%;
-
-    &:after {
+    &:first-of-type {
       left: $distance;
       transform: skew(-60deg) translateX(150%);
     }
 
-    &:before {
-      z-index: 2;
+    &:nth-of-type(2) {
+      // bandit level
       right: $distance;
       transform: skew(60deg) translateX(-150%);
     }
+  }
+
+  &__knot {
+    transform: translate(-60%, -40%); // magic number
   }
 }

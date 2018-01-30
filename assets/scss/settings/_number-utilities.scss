@@ -87,7 +87,6 @@ $numberUtilitiesSettings: (
       ),
     ),
   ),
-
   (
     property: 'border-radius',
     propertyClass: 'borrad-',
@@ -100,6 +99,36 @@ $numberUtilitiesSettings: (
       (
         value: '3px 3px 0 0',
         valueClass: '3300',
+      ),
+      (
+        value: 'inherit',
+      ),
+    ),
+  ),
+  ( property: 'top',
+    propertyClass: 'top-',
+
+    values: (
+      (
+        value: 0,
+      ),
+    ),
+  ),
+  ( property: 'left',
+    propertyClass: 'left-',
+
+    values: (
+      (
+        value: 0,
+      ),
+    ),
+  ),
+  ( property: 'z-index',
+    propertyClass: 'z-',
+
+    values: (
+      (
+        value: 1,
       ),
     ),
   ),

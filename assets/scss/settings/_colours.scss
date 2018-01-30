@@ -3,6 +3,7 @@ $colour-fold: #0F121F;
 $colour-floor: #1D2438;
 $colour-floor05: rgba($colour-floor, .5);
 
+$colour-playdough: #3CB1FF;
 $colour-blanket: #ADC8FA;
 $colour-paste: #DCE4F7;
 $colour-deepblue: #1F3A83;
@@ -15,8 +16,49 @@ $colour-satsuma: #F29E44;
 
 $colour-hotmelon: #F5515F;
 
-
-
 $colour-win: #9CEB6E;
 
 $colour-white: #fff;
+
+// oranges
+$colour-bandit: $colour-orange;
+$colour-god: #F7B874;
+$colour-legendary: #F7E094;
+$colour-monster: #FCFBD7;
+
+// greens
+$colour-warrior: #24E25D;
+$colour-ninja: #9CEB6E;
+$colour-assassin: #BDF896;
+$colour-knight: #E5FCD7;
+
+// blues
+$colour-fighter: #0DC4E0;
+$colour-scout: #6EEBE9;
+$colour-junior: #97F7E6;
+$colour-rookie: #D7F3FC;
+
+
+
+
+// greys
+// $colour-newcomer //Newcomer (<10 games played)
+
+
+
+
+
+// Junior <= 849
+// Rookie <= 1099
+// Scout <= 1199
+// Intermediate <= 1299 "for a level of knowledge or skill between basic and advanced"
+// Fighter <= 1399
+// Knight <= 1499
+// Assassin <= 1599
+// Ninja <= 1699
+// Warrior <= 1799
+// Mega <= 1899
+// Monster <= 1999
+// Legendary<= 2099
+// Lord <= 2199
+// God >

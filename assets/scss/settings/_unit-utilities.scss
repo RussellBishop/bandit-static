@@ -17,6 +17,10 @@ $unitUtilitiesSettings: (
 
         values: (
           (
+            value: calc(var(--Baseline)),
+            valueClass: '1',
+          ),
+          (
             value: calc(var(--Baseline) * 2),
             valueClass: '2',
           ),
