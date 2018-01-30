@@ -97,6 +97,10 @@ $numberUtilitiesSettings: (
         valueClass: '3',
       ),
       (
+        value: '6px',
+        valueClass: '6',
+      ),
+      (
         value: '3px 3px 0 0',
         valueClass: '3300',
       ),
@@ -107,6 +111,24 @@ $numberUtilitiesSettings: (
   ),
   ( property: 'top',
     propertyClass: 'top-',
+
+    values: (
+      (
+        value: 0,
+      ),
+    ),
+  ),
+  ( property: 'right',
+    propertyClass: 'right-',
+
+    values: (
+      (
+        value: 0,
+      ),
+    ),
+  ),
+  ( property: 'bottom',
+    propertyClass: 'bottom-',
 
     values: (
       (

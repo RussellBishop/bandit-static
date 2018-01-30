@@ -79,6 +79,9 @@ $wordUtilitiesSettings: (
         value: 'space-around',
         valueClass: 'around',
       ),
+      (
+        value: 'center',
+      ),
     ),
   ),
   (
@@ -311,6 +314,16 @@ $wordUtilitiesSettings: (
       (
         value: nowrap,
         valueClass: no,
+      ),
+    ),
+  ),
+  (
+    property: 'pointer-events',
+    propertyClass: 'pointer-',
+
+    values: (
+      (
+        value: 'none',
       ),
     ),
   ),

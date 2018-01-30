@@ -1,0 +1,13 @@
+/**
+ * .o-scroll-overflow
+ */
+
+$object: 'scroll-overflow';
+
+#{'.' + $iota-global-objects-namespace + $object} {
+  overflow: hidden;
+
+  &:hover {
+    overflow-x: auto;
+  }
+}

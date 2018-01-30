@@ -119,6 +119,27 @@ $unitUtilitiesSettings: (
       ),
     ),
   ),
+  ( property: 'padding-top',
+    propertyClass: 'pt-',
+
+    units: (
+      (
+        unit: 'baseline',
+        unitClass: 'bl',
+
+        values: (
+          (
+            value: calc(var(--Baseline) * 1),
+            valueClass: 1,
+          ),
+          (
+            value: calc(var(--Baseline) * 2),
+            valueClass: 2,
+          ),
+        ),
+      ),
+    ),
+  ),
   ( property: 'margin-top',
     propertyClass: 'mt-',
 

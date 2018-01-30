@@ -26,56 +26,46 @@
 
         <main class="u-grow-1 u-bgcolor-floor u-borrad-6 u-pv-3bl u-vspace-3bl">
 
-            <section id="disputes" class="o-container">
+            <header class="o-container u-ph-1bl">
 
-                <header class="u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Disputes</h1>
-                </header>
+                <div class="u-vspace-06r">
+                    <h1 class="u-size-h1 u-color-white">Club Results</h1>
+                    <h2 class="u-size-h">Who’s been collecting scalps lately?</h2>
+                </div>
 
-                <dl class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
+                <a href="/results" class="c-button c-button--default u-mt-2bl">Add results</a>
 
-                    <?php include('components/dispute-active.php'); ?>
-                    <?php include('components/dispute-passive.php'); ?>
+            </header>
 
-                </dl>
-
-            </section>
-
-            <section id="results" class="o-container">
+            <section class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Results</h1>
-                    <a href="/results" class="c-go">go to</a>
+                    <h1 class="u-size-h2 u-color-white">Sunday 18th</h1>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                     <?php
 
-                        for ($i = 1; $i < 4; $i++) {
+                        for ($i = 1; $i < rand(2,11); $i++) {
                             include('components/result-row.php');
                         }
 
                     ?>
                 </ol>
 
-                <footer class="u-ph-1bl">
-                    <a href="/results" class="c-button c-button--default u-mt-1bl">Add results</a>
-                </footer>
-
             </section>
 
-            <section id="weekly-leaderboard" class="o-container">
+            <section class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Weekly <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/results" class="c-go">go to</a>
+                    <h1 class="u-size-h2 u-color-white">Saturday 17th</h1>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                     <?php
 
-                        for ($i = 1; $i < 4; $i++) {
-                            include('components/weekly-leaderboard-row.php');
+                        for ($i = 1; $i < rand(2,11); $i++) {
+                            include('components/result-row.php');
                         }
 
                     ?>
@@ -83,18 +73,17 @@
 
             </section>
 
-            <section id="alltime-leaderboard" class="o-container">
+            <section class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">All time <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/results" class="c-go">go to</a>
+                    <h1 class="u-size-h2 u-color-white">Thursday 14th</h1>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                     <?php
 
-                        for ($i = 1; $i < 4; $i++) {
-                            include('components/alltime-leaderboard-row.php');
+                        for ($i = 1; $i < rand(2,11); $i++) {
+                            include('components/result-row.php');
                         }
 
                     ?>
