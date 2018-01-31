@@ -1,5 +1,3 @@
-
-
 <li class="u-bgcolor-fold <?=($i != 2) ? 'u-opac-05 u-opac-1@hover' : ''?>">
     <a href="/all-time-leaderboard#1" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
 
@@ -10,8 +8,13 @@
         <dl class="u-flex u-jc-between u-ai-center u-width-100pc">
             <div class="u-grow-1 u-vspace-03r">
                 <dt class="u-color-paste">Rebekah Reeves</dt>
-                <dd class="u-size-13px">
-                    <span class=""><?= 2000 - ($i * 5 * (20 - $i)); ?> <span class="o-dictate">rating</span>
+                <dd class="u-flex u-ai-center u-hspace-8px u-size-13px">
+                    <span class="u-flex u-ai-center u-hspace-4px">
+                        <svg class="u-width-1bl u-height-auto" width="11" height="13" viewBox="0 0 11 13">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/svg/sprite.svg#rating"></use>
+                        </svg>
+                        <span class="u-color-paste"><?= 2000 - ($i * 5 * (20 - $i)); ?> <span class="o-dictate">rating</span></span>
+                    </span>
                     <span class="u-uppercase u-color-<?=$level?>"><?=$level?></span>
                 </dd>
             </div>

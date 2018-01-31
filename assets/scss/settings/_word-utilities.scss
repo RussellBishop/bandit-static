@@ -208,6 +208,10 @@ $wordUtilitiesSettings: (
         valueClass: 'steam',
       ),
       (
+        value: $colour-hotmelon,
+        valueClass: 'hotmelon',
+      ),
+      (
         value: $colour-win,
         valueClass: 'win',
       ),
@@ -218,7 +222,12 @@ $wordUtilitiesSettings: (
       (
         value: $colour-playdough,
         valueClass: 'playdough',
+        pseudo: 'hover',
       ),
+
+      /**
+       *  Level colours
+       */
       (
         value: $colour-bandit,
         valueClass: 'bandit',
@@ -266,6 +275,17 @@ $wordUtilitiesSettings: (
       (
         value: $colour-rookie,
         valueClass: 'rookie',
+      ),
+    ),
+  ),
+  (
+    property: 'box-shadow',
+    propertyClass: 'shadow-',
+
+    values: (
+      (
+        value: 'inset 2px 0 0 0' $colour-hotmelon', inset 4px 0 40px 4px 'rgba($colour-hotmelon, 0.1),
+        valueClass: 'dispute'
       ),
     ),
   ),

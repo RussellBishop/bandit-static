@@ -11,7 +11,7 @@ $component: 'fade';
   @extend .u-pointer-none;
   width: 4rem;
   pointer-events: none;
-  transition: opacity .15s ease;
+  transition: all .15s ease;
 
   &--left {
     @extend .u-left-0;
@@ -24,6 +24,6 @@ $component: 'fade';
   }
 
   *:hover > & {
-    opacity: 0;
+    width: 0;
   }
 }

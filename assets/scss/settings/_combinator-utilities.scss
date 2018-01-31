@@ -47,6 +47,18 @@ $combinatorUtilitiesSettings: (
 
         units: (
           (
+            unit: 'px',
+
+            values: (
+              (
+                value: 4,
+              ),
+              (
+                value: 8,
+              ),
+            ),
+          ),
+          (
             unit: 'baseline',
             unitClass: 'bl',
 
