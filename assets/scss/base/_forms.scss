@@ -1,8 +1,66 @@
-select {
-  max-width: 160px;
-  background: none;
-  border: none;
+input,
+select,
+textarea {
   margin: 0;
   padding: 0;
-  font: inherit;
+  background: none;
+  border: none;
+
+  *:focus {
+    outline: none;
+  }
+}
+
+input,
+textarea {
+  color: $colour-paste;
+  border-bottom: 3px solid rgba($colour-paste, .2);
+
+  &:not(:placeholder-shown) {
+    border-bottom-color: $colour-paste;
+  }
+
+  &:invalid {
+    background-color: rgba($colour-hotmelon, .2);
+    border-bottom-color: $colour-hotmelon;
+    color: $colour-hotmelon;
+  }
+}
+
+label {
+  color: $colour-paste;
+}
+
+textarea {
+  @extend .u-ph-1bl;
+  @extend .u-pv-1bl;
+  max-width: 100%;
+
+  &:not(:focus) {
+    @extend .u-bgcolor-fold05;
+  }
+
+  &:focus {
+    @extend .u-bgcolor-fold;
+  }
+}
+
+::-webkit-input-placeholder {
+  color: $colour-steam;
+}
+
+::-moz-placeholder {
+  color: $colour-steam;
+}
+
+:-ms-input-placeholder {
+  color: $colour-steam;
+}
+
+:-moz-placeholder {
+  color: $colour-steam;
+}
+
+select {
+  max-width: 160px; // too generic
 }

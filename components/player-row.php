@@ -2,7 +2,10 @@
     <a href="/single-player.php" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
 
         <div class="u-mr-1bl">
-            <?php include('components/player-photo.php'); ?>
+            <?php
+                $photoWidth = 3;
+                include('components/player-photo.php');
+            ?>
         </div>
 
         <dl class="u-flex u-jc-between u-ai-center u-width-100pc">

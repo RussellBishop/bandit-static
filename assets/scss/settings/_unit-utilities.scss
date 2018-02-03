@@ -28,6 +28,10 @@ $unitUtilitiesSettings: (
             value: calc(var(--Baseline) * 3),
             valueClass: '3',
           ),
+          (
+            value: calc(var(--Baseline) * 4),
+            valueClass: '4',
+          ),
         ),
       ),
       (
@@ -53,6 +57,16 @@ $unitUtilitiesSettings: (
         values: (
           (
             value: 100,
+          ),
+        ),
+      ),
+      (
+        unit: 'rem',
+        unitClass: 'rem',
+
+        values: (
+          (
+            value: 5,
           ),
         ),
       ),
@@ -158,6 +172,12 @@ $unitUtilitiesSettings: (
             valueClass: 2,
           ),
         ),
+      ),
+    ),
+
+    keywords: (
+      (
+        keyword: 'auto',
       ),
     ),
   ),

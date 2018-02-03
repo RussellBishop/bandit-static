@@ -1,8 +1,11 @@
 <li class="u-bgcolor-fold <?=($i != 2) ? 'u-opac-05 u-opac-1@hover' : ''?>">
-    <a href="/all-time-leaderboard#1" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
+    <a href="/single-player.php" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
 
         <div class="u-mr-1bl">
-            <?php include('components/player-photo.php'); ?>
+            <?php
+                $photoWidth = 3;
+                include('components/player-photo.php');
+            ?>
         </div>
 
         <dl class="u-flex u-jc-between u-ai-center u-width-100pc">
@@ -18,6 +21,7 @@
                     <span class="u-uppercase u-color-<?=$level?>"><?=$level?></span>
                 </dd>
             </div>
+            <dd class="u-color-paste u-size-h4 u-weight-bold u-ws-no">#<?=$i?></dd>
         </dl>
     </a>
 </li>

@@ -112,6 +112,8 @@ table {
 
 hr {
   display: block;
+  margin: 0;
+  border: none;
 }
 
 button {
@@ -138,12 +140,19 @@ textarea,
 button {
   font: inherit;
   color: inherit;
+  border-radius: 0;
 }
 
 input::-moz-focus-inner,
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 *,

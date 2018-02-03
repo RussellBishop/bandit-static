@@ -1,0 +1,44 @@
+/**
+ * .o-main
+ * The contents of this view, below te navigation.
+ */
+
+$object: 'main';
+
+#{'.' + $iota-global-objects-namespace + $object} {
+  @extend .u-flex;
+  @extend .u-fd-col;
+  @extend .u-grow-1;
+  @extend .u-bgcolor-floor;
+  @extend .u-borrad-6;
+  @extend .u-vspace-all-3bl;
+
+  > *:nth-last-child(2) {
+    // allows us to push the footer to the bottom, but keep the footer's margin-top
+    margin-bottom: auto;
+  }
+
+  > * {
+    opacity: 0;
+    animation: fadeUpIn .3s ease-out;
+    animation-fill-mode: forwards;
+
+    @for $i from 2 through 7 {
+      &:nth-child(#{$i}) {
+        animation-delay: #{.05 * $i}s;
+      }
+    }
+  }
+}
+
+@keyframes fadeUpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -82,6 +82,10 @@ $wordUtilitiesSettings: (
       (
         value: 'center',
       ),
+      (
+        value: 'flex-end',
+        valueClass: 'end',
+      ),
     ),
   ),
   (
@@ -106,6 +110,10 @@ $wordUtilitiesSettings: (
       (
         value: $colour-fold,
         valueClass: 'fold',
+      ),
+      (
+        value: $colour-fold05,
+        valueClass: 'fold05',
       ),
       (
         value: $colour-floor,
@@ -295,7 +303,7 @@ $wordUtilitiesSettings: (
 
     values: (
       (
-        value: 'europa, Europa, Helvetica',
+        value: '"europa", Europa, Helvetica',
         valueClass: 'europa',
       ),
     ),

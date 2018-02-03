@@ -22,21 +22,21 @@
 
             <nav class="u-bgcolor-fold u-pt-2bl">
                 <ul class="u-flex u-ph-1bl u-hspace-1bl">
-                    <li class="u-grow-1"><a href="/leaderboards.php" class="u-block u-pv-1bl u-ph-1bl u-borrad-3300 u-size-h3 u-color-white u-bgcolor-floor">Weekly</a></li>
-                    <li class="u-grow-1"><a href="/leaderboards-all-time.php" class="u-block u-pv-1bl u-ph-1bl u-color-playdough u-color-white@hover u-bgcolor-floor05 u-borrad-3300 u-size-h3">All-time</a></li>
+                    <li class="u-grow-1"><a href="/leaderboards.php" class="u-block u-pv-1bl u-ph-1bl u-color-playdough u-color-white@hover u-bgcolor-floor05 u-borrad-3300 u-size-h3">Weekly</a></li>
+                    <li class="u-grow-1"><a href="/leaderboards-all-time.php" class="u-block u-pv-1bl u-ph-1bl u-borrad-3300 u-size-h3 u-color-white u-bgcolor-floor">All-time</a></li>
                 </ul>
             </nav>
 
             <section id="weekly-leaderboard" class="o-container">
 
-                <dl class="u-vspace-3bl">
-                    <dt class="u-ph-1bl">Monday 8th - Sunday 15th September</dt>
+                <dl>
+                    <dt class="o-dictate">All time leaderboards</dt>
                     <dd>
                         <li>
                             <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                                 <?php
                                     for ($i = 1; $i < 11; $i++) {
-                                        include('components/weekly-leaderboard-row.php');
+                                        include('components/alltime-leaderboard-row.php');
                                     }
                                 ?>
                             </ol>
