@@ -18,6 +18,7 @@
             <a href="/settings.php" class="u-flex u-ai-center u-hspace-05bl <?php if($view != 'player') echo $fadedClasses; ?>">
                 <?php
                     $photoWidth = 2;
+                    $photoId = 54;
                     include('components/player-photo.php');
                 ?>
                 <span class="u-color-orange u-uppercase u-weight-bold">Stephen</span>

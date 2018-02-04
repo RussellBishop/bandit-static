@@ -1,6 +1,6 @@
 /**
  * .o-main
- * The contents of this view, below te navigation.
+ * The contents of this view, below the navigation.
  */
 
 $object: 'main';
@@ -14,11 +14,12 @@ $object: 'main';
   @extend .u-vspace-all-3bl;
 
   > *:nth-last-child(2) {
-    // allows us to push the footer to the bottom, but keep the footer's margin-top
+    // push the footer to the bottom, but keep the footer's margin-top
     margin-bottom: auto;
   }
 
   > * {
+    // animate in each section, delayed
     opacity: 0;
     animation: fadeUpIn .3s ease-out;
     animation-fill-mode: forwards;
@@ -28,17 +29,5 @@ $object: 'main';
         animation-delay: #{.05 * $i}s;
       }
     }
-  }
-}
-
-@keyframes fadeUpIn {
-  0% {
-    opacity: 0;
-    transform: translateY(1.5rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
   }
 }

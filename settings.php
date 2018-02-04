@@ -20,11 +20,33 @@
 
             <hr class="c-hr" />
 
-            <section class="o-container">
+            <section class="o-container u-vspace-3bl">
 
+                <fieldset class="u-pos-relative">
+                    <input type="text" value="Christy Quinn" placeholder="Christy Quinn" required />
+                    <label>Name</label>
+                </fieldset>
 
-                <input type="text" value="Christy Quinn" />
-                <label>Name</label>
+                <fieldset class="u-pos-relative">
+                    <input type="email" value="christyjquinn@gmail.com" placeholder="christyjquinn@gmail.com" required />
+                    <label>Email address</label>
+                </fieldset>
+
+                <fieldset class="u-flex u-hspace-2bl u-jc-between">
+
+                    <div class="u-pos-relative" style="flex: 1 0 0;">
+                        Test
+                        <?php /* <input type="password" />
+                        <label>New password</label> */ ?>
+                    </div>
+
+                    <div class="u-pos-relative" style="flex: 1 0 0;">
+                        Test
+                        <?php /* <input type="password" />
+                        <label>Re-type</label> */ ?>
+                    </div>
+
+                </fieldset>
 
             </section>
 

@@ -10,14 +10,50 @@
 
     <meta name="theme-color" content="#000207" />
 
-<!--     <script>
-      (function(d) {
-        var config = {
-          kitId: 'zgp3lhc',
-          scriptTimeout: 3000,
-          async: true
-        },
-        h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-      })(document);
-    </script> -->
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+<script>
+
+    $.fn.extend({
+        scrollRight: function (val) {
+            if (val === undefined) {
+                return this[0].scrollWidth - (this[0].scrollLeft + this[0].clientWidth) + 1;
+            }
+            return this.scrollLeft(this[0].scrollWidth - this[0].clientWidth - val);
+        }
+    });
+
+    var elem = $('.o-scroll-overflow');
+
+    elem.scroll(function() {
+       if(elem.scrollLeft() > 1) {
+            $('.c-fade--left').css('width', '4rem');
+       } else {
+            $('.c-fade--left').css('width', '0');
+       }
+    });
+
+    elem.scroll(function() {
+        if(elem.scrollRight() > 1) {
+            $('.c-fade--right').css('width', '4rem');
+       } else {
+            $('.c-fade--right').css('width', '0');
+       }
+    });
+
+    $('input').keyup(function() {
+        console.log('input change');
+
+        var empty = $(this).closest('div[title]').find("input").filter(function() {
+            return this.value === "";
+            console.log('// No inputs are empty');
+        });
+
+        if(empty.length) {
+            console.log('// At least one input is empty');
+        }
+    });
+
+</script>
+
 </head>
