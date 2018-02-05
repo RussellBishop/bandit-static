@@ -82,6 +82,10 @@ $combinatorUtilitiesSettings: (
                 value: calc(var(--Baseline) * 1),
                 valueClass: '1',
               ),
+              (
+                value: calc(var(--Baseline) * 2),
+                valueClass: '2',
+              ),
             ),
           ),
         ),

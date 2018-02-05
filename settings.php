@@ -32,21 +32,21 @@
                     <label>Email address</label>
                 </fieldset>
 
-                <fieldset class="u-flex u-hspace-2bl u-jc-between">
+                <div class="u-flex u-hspace-2bl">
 
-                    <div class="u-pos-relative" style="flex: 1 0 0;">
-                        Test
-                        <?php /* <input type="password" />
-                        <label>New password</label> */ ?>
-                    </div>
+                    <fieldset class="u-pos-relative">
+                        <input type="password" />
+                        <label>New password</label>
+                    </fieldset>
 
-                    <div class="u-pos-relative" style="flex: 1 0 0;">
-                        Test
-                        <?php /* <input type="password" />
-                        <label>Re-type</label> */ ?>
-                    </div>
+                    <fieldset class="u-pos-relative">
+                        <input type="password" />
+                        <label>Re-type</label>
+                    </fieldset>
 
-                </fieldset>
+                </div>
+
+                <a href="/" class="c-button c-button--default">Update my settings</a>
 
             </section>
 

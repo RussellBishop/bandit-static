@@ -5,7 +5,7 @@
 ?>
 
 <nav>
-    <div class="o-container u-pv-1bl">
+    <div class="o-container u-pv-1025bl">
         <div class="u-ph-1bl u-flex u-jc-between">
             <a href="/" class="u-flex u-ai-center u-hspace-05bl <?php if($view != 'club') echo $fadedClasses; ?>">
                 <div class="u-pos-relative">

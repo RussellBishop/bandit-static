@@ -122,6 +122,10 @@ $unitUtilitiesSettings: (
             valueClass: 1,
           ),
           (
+            value: calc(var(--Baseline) * 1.25),
+            valueClass: 1025,
+          ),
+          (
             value: calc(var(--Baseline) * 2),
             valueClass: 2,
           ),

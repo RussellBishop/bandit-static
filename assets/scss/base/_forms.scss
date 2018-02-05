@@ -52,6 +52,7 @@ textarea {
 label {
   @extend .u-pos-absolute;
   @extend .u-top-0;
+  @extend .u-left-0;
   @extend .u-weight-bold;
   @extend .u-ws-no;
   color: #616F94;
