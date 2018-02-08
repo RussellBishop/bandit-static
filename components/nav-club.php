@@ -7,7 +7,7 @@
             <li><a href="/results.php" class="c-tab c-tab--inactive">Results</a></li>
             <li><a href="/leaderboards.php" class="c-tab c-tab--inactive">Leaderboards</a></li>
             <li><a href="/players.php" class="c-tab c-tab--inactive">Players</a></li>
-            <li><a href="/" class="c-tab c-tab--inactive">Club</a></li>
+            <li><a href="/club-info.php" class="c-tab c-tab--inactive">Club</a></li>
             <li aria-hidden="true">&nbsp;</li>
         </ul>
     </div>

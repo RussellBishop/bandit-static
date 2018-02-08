@@ -20,12 +20,18 @@
 
 input,
 select,
+textarea,
+label {
+  transition: all .4s;
+}
+
+input,
+select,
 textarea {
   margin: 0;
   padding: 0;
   background: none;
   border: none;
-  transition: all .4s;
 
   &:focus {
     outline: none;
@@ -47,6 +53,14 @@ textarea {
     border-bottom-color: $colour-hotmelon;
     color: $colour-hotmelon;
   }
+
+  &[disabled] {
+    @extend .u-color-steam;
+
+    ~ label {
+      @extend .u-color-steam;
+    }
+  }
 }
 
 label {
@@ -55,7 +69,7 @@ label {
   @extend .u-left-0;
   @extend .u-weight-bold;
   @extend .u-ws-no;
-  color: #616F94;
+  @extend .u-color-white;
 }
 
 textarea {
@@ -73,9 +87,8 @@ textarea {
 }
 
 select {
-  // too generic
-  width: 100%;
-  max-width: 160px;
+  @extend .u-width-100pc;
+  max-width: 160px; // too generic
 
   &[disabled] {
     color: inherit;
@@ -87,9 +100,10 @@ select {
 [type="password"] {
   @extend .u-block;
   @extend .u-width-100pc;
+  @extend .u-pv-1bl;
+  @extend .u-ph-1bl;
   @extend .u-size-h4;
   @extend .u-weight-bold;
-  padding: var(--Baseline);
 
   ~ label {
     transform: translateY(-70%);
@@ -98,7 +112,7 @@ select {
   &:focus {
 
     ~ label {
-      color: $colour-white;
+      @extend .u-color-white;
       transform: translateY(-120%);
     }
   }

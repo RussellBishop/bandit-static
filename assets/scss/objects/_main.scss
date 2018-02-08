@@ -15,12 +15,12 @@ $object: 'main';
 
   > *:nth-last-child(2) {
     // push the footer to the bottom, but keep the footer's margin-top
-    margin-bottom: auto;
+    @extend .u-mb-auto;
   }
 
   > * {
     // animate in each section, delayed
-    opacity: 0;
+    @extend .u-opac-0;
     animation: fadeUpIn .3s ease-out;
     animation-fill-mode: forwards;
 

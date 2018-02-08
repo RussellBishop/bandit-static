@@ -131,7 +131,7 @@
 
                         <div class="u-ph-1bl u-vspace-2bl">
 
-                            <div class="u-vspace-2bl">
+                            <div class="u-pos-relative u-vspace-2bl">
                                 <p class="u-size-h4"><label>Comments:</label></p>
                                 <textarea placeholder="Tell us what went down" class="u-width-100pc u-height-5rem"></textarea>
                             </div>

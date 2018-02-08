@@ -32,7 +32,7 @@ $component: 'button';
     @extend .u-color-white;
     border-top: 2px solid $colour-satsuma;
     border-bottom: 2px solid $colour-orange;
-    box-shadow: 0 3px 10px 0 rgba(0,0,0, .50), inset 0 2px 0 0 #626F94;
+    box-shadow: 0 3px 10px 0 rgba(0,0,0, .50), inset 0 2px 0 0 $colour-steam;
 
     &:hover,
     &:focus {
@@ -57,7 +57,7 @@ $component: 'button';
   }
 
   &[disabled] {
-    opacity: .7;
+    @extend .u-opac-07;
     border: 2px solid currentColor;
   }
 }

@@ -4,7 +4,7 @@
         <div class="u-grow-1 u-basis-0 u-flex u-ai-center u-jc-center u-order-2 u-align-center u-hspace-1bl">
 
             <dt class="u-size-h4 u-weight-bold u-ws-no">
-                <span class="o-dictate">Teddy Austin </span> <input <?php if ($disabled == true) { echo 'disabled'; } ?> class="u-align-center" style="line-height: 2; width: 2.2rem;" type="number" placeholder="0" min="0" max="14" /> &ndash; <span class="o-dictate">Angelica Hamlet </span><input <?php if ($disabled == true) { echo 'disabled'; } ?> class="u-align-center" style="line-height: 2; width: 2.2rem;" type="number" placeholder="0" min="0" max="14" />
+                <span class="o-dictate">Teddy Austin </span> <input <?php if ($disabled == true) { echo 'disabled'; } ?> class="u-width-205bl u-line-2 u-align-center" type="number" placeholder="0" min="0" max="14" /> &ndash; <span class="o-dictate">Angelica Hamlet </span><input <?php if ($disabled == true) { echo 'disabled'; } ?> class="u-width-205bl u-line-2 u-align-center" type="number" placeholder="0" min="0" max="14" />
             </dt>
 
         </div>

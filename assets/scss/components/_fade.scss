@@ -10,7 +10,6 @@ $component: 'fade';
   @extend .u-bottom-0;
   @extend .u-pointer-none;
   width: 4rem;
-  pointer-events: none;
   transition: all .15s ease;
 
   &--left {

@@ -25,6 +25,9 @@ $wordUtilitiesSettings: (
 
     values: (
       (
+        value: 'hidden',
+      ),
+      (
         value: 'auto',
       ),
     ),
@@ -63,6 +66,16 @@ $wordUtilitiesSettings: (
       (
         value: 'column',
         valueClass: 'col',
+      ),
+    ),
+  ),
+  (
+    property: 'flex-wrap',
+    propertyClass: 'fw-',
+
+    values: (
+      (
+        value: 'wrap',
       ),
     ),
   ),
@@ -294,6 +307,10 @@ $wordUtilitiesSettings: (
       (
         value: 'inset 2px 0 0 0' $colour-hotmelon', inset 4px 0 40px 4px 'rgba($colour-hotmelon, 0.1),
         valueClass: 'dispute'
+      ),
+      (
+        value: 'inset 2px 0 0 0' $colour-orange,
+        valueClass: 'active'
       ),
     ),
   ),
