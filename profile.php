@@ -6,6 +6,7 @@
 
         <?php
             $view = 'player';
+            $page = 'profile';
             include('components/header.php');
         ?>
 
@@ -124,7 +125,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">Results</h1>
-                    <a href="/single-player-results.php" class="c-go u-color-playdough">See all</a>
+                    <a href="/profile-results.php" class="c-go u-color-playdough">See all</a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">

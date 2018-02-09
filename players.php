@@ -6,6 +6,7 @@
 
         <?php
             $view = 'club';
+            $page = 'players';
             include('components/header.php');
         ?>
 

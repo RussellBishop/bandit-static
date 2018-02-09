@@ -6,6 +6,7 @@
 
         <?php
             $view = 'player';
+            $page = 'settings';
             include('components/header.php');
         ?>
 

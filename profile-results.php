@@ -5,29 +5,30 @@
     <div class="o-window">
 
         <?php
-            $view = 'club';
-            $page = 'players';
+            $view = 'player';
+            $page = 'profile';
             include('components/header.php');
         ?>
 
         <main class="o-main">
 
-            <div class="o-container u-ph-1bl u-vspace-2bl">
+            <div class="o-container u-vspace-3bl">
 
-                <a href="/players.php" class="u-color-playdough">Back to Players</a>
+                <a href="/profile.php" class="u-color-playdough">Back to Profile</a>
 
-                <header class="u-flex u-ai-center">
+                <header class="u-flex u-ai-center u-ph-1bl">
 
                     <div class="u-mr-1bl">
                         <?php
                             $photoWidth = 4;
+                            $photoId = 54;
                             include('components/player-photo.php');
                         ?>
                     </div>
 
                     <dl class="u-flex u-jc-between u-ai-center u-width-100pc">
                         <div class="u-grow-1 u-vspace-06r">
-                            <dt><h1 class="u-size-h1 u-color-white">Rebekah Reeves</h1></dt>
+                            <dt><h1 class="u-size-h1 u-color-white">Stephen Haynult</h1></dt>
                             <dd class="u-flex u-ai-center u-hspace-8px u-size-15px">
                                 <span class="u-flex u-ai-center u-hspace-8px">
                                     <span class="u-flex u-ai-center u-hspace-4px">
@@ -51,17 +52,16 @@
 
             <hr class="c-hr" />
 
-            <section id="results" class="o-container">
+            <section class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Results</h1>
-                    <a href="/single-player-results.php" class="c-go u-color-playdough">See all</a>
+                    <h1 class="u-size-h2 u-color-white">Sunday 18th</h1>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                     <?php
 
-                        for ($i = 1; $i < 4; $i++) {
+                        for ($i = 1; $i < rand(2,11); $i++) {
                             include('components/result-row.php');
                         }
 
@@ -70,18 +70,17 @@
 
             </section>
 
-            <section id="weekly-leaderboard" class="o-container">
+            <section class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Weekly <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/leaderboards.php" class="c-go u-color-playdough">See all</a>
+                    <h1 class="u-size-h2 u-color-white">Saturday 17th</h1>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                     <?php
 
-                        for ($i = 1; $i < 4; $i++) {
-                            include('components/weekly-leaderboard-row.php');
+                        for ($i = 1; $i < rand(2,11); $i++) {
+                            include('components/result-row.php');
                         }
 
                     ?>
@@ -89,24 +88,27 @@
 
             </section>
 
-            <section id="alltime-leaderboard" class="o-container">
+            <section class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">All time <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/leaderboards.php" class="c-go u-color-playdough">See all</a>
+                    <h1 class="u-size-h2 u-color-white">Thursday 14th</h1>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
                     <?php
 
-                        for ($i = 1; $i < 4; $i++) {
-                            include('components/alltime-leaderboard-row.php');
+                        for ($i = 1; $i < rand(2,11); $i++) {
+                            include('components/result-row.php');
                         }
 
                     ?>
                 </ol>
 
             </section>
+
+            <footer class="o-container u-ph-1bl">
+                <a href="/results.php" class="c-button c-button--default u-mt-2bl">Load more&hellip;</a>
+            </footer>
 
             <?php include('components/footer.php'); ?>
 
