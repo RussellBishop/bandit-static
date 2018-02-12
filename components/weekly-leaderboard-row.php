@@ -10,6 +10,7 @@
         <div class="u-mr-1bl">
             <?php
                 $photoWidth = 3;
+                if ($i == 1) { $photoId = 54; }
                 include('components/player-photo.php');
             ?>
         </div>

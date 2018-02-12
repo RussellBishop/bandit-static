@@ -6,7 +6,7 @@
 
         <?php
             $view = 'club';
-            $page = 'results';
+            $page = 'matches';
             include('components/header.php');
         ?>
 
@@ -14,7 +14,7 @@
 
             <div class="o-container u-ph-1bl u-vspace-2bl">
 
-                <a href="/results.php" class="u-color-playdough">Back to Results</a>
+                <a href="/matches.php" class="u-color-playdough">Back to Matches</a>
 
             </div>
 
@@ -39,8 +39,10 @@
                             </dt>
 
                             <dd>
-                                <p class="u-size-h1 u-color-white">3</p>
+                                <p class="u-size-h1 u-color-white">3<span class="o-dictate"> games won</span></p>
                             </dd>
+
+                            <dd class="u-color-win">+<?=rand(20,50) * 5?> <abbr title="rating points">pts.</abbr></dd>
 
                         </li>
 
@@ -58,8 +60,10 @@
                             </dt>
 
                             <dd>
-                                <p class="u-size-h1 u-color-white">2</p>
+                                <p class="u-size-h1 u-color-white">2<span class="o-dictate"> games won</span></p>
                             </dd>
+
+                            <dd class="u-color-loss">-<?=rand(10,30) * 5?> <abbr title="rating points">pts.</abbr></dd>
 
                         </li>
                     </dl>

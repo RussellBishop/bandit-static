@@ -1,6 +1,6 @@
 <li class="u-bgcolor-fold u-pos-relative">
     <div class="o-absolute-fill u-borrad-inherit u-shadow-dispute u-pointer-none"></div>
-    <a href="/dispute" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
+    <a href="/single-result-disputed.php" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
         <div class="u-mr-1bl">
             <?php
                 $photoWidth = 3;

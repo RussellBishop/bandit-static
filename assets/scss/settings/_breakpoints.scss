@@ -3,6 +3,9 @@ $breakpoint-max: 456px;
 
 $iota-global-breakpoints: (
 
+  uptowindowgap:
+  'screen and (max-width: '$breakpoint-window-gap - 1')',
+
   fromwindowgap:
   'screen and (min-width: '$breakpoint-window-gap')',
 

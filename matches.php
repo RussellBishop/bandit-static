@@ -6,7 +6,7 @@
 
         <?php
             $view = 'club';
-            $page = 'results';
+            $page = 'matches';
             include('components/header.php');
         ?>
 
@@ -15,11 +15,11 @@
             <header class="o-container u-ph-1bl">
 
                 <div class="u-vspace-06r">
-                    <h1 class="u-size-h1 u-color-white">Club Results</h1>
+                    <h1 class="u-size-h1 u-color-white">Club Matches</h1>
                     <h2 class="u-size-h4">Who’s been collecting scalps lately?</h2>
                 </div>
 
-                <a href="/add-results.php" class="c-button c-button--default u-mt-2bl">Add results</a>
+                <a href="/add-matches.php" class="c-button c-button--default u-mt-2bl">Add matches</a>
 
             </header>
 

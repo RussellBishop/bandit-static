@@ -46,7 +46,7 @@
                 </dl>
 
                 <footer class="u-ph-1bl">
-                    <a href="/results.php" class="c-button c-button--default u-mt-2bl">Load more&hellip;</a>
+                    <a href="/matches.php" class="c-button c-button--default u-mt-2bl">Load more&hellip;</a>
                 </footer>
 
             </section>

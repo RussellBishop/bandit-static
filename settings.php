@@ -35,6 +35,11 @@
                         <label>Email:</label>
                     </fieldset>
 
+                    <fieldset class="u-pos-relative">
+                        <input type="file" value="" />
+                        <label>Photo:</label>
+                    </fieldset>
+
                     <div class="u-flex u-hspace-2bl">
 
                         <fieldset class="u-pos-relative">

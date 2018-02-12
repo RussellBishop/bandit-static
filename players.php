@@ -40,7 +40,7 @@
                         </optgroup>
                     </select>
 
-                    <a href="/invite" class="u-color-playdough">Invite player</a>
+                    <a href="/invite-player.php" class="u-color-playdough">Invite player</a>
 
                 </div>
 
@@ -55,7 +55,7 @@
                 </ol>
 
                 <footer class="u-ph-1bl">
-                    <a href="/results.php" class="c-button c-button--default u-mt-1bl">Load more&hellip;</a>
+                    <a href="/matches.php" class="c-button c-button--default u-mt-1bl">Load more&hellip;</a>
                 </footer>
 
             </section>

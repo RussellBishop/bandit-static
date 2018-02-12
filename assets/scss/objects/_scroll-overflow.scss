@@ -6,11 +6,16 @@ $object: 'scroll-overflow';
 
 #{'.' + $iota-global-objects-namespace + $object} {
 
-  &:not(:hover) {
-    @extend .u-ov-hidden;
-  }
+  @extend .u-ovx-auto;
 
-  &:hover {
-    @extend .u-ovx-auto;
-  }
+  //
+  // Doesn't work on mobile (hover = touch.. then it works....)
+  //
+  // &:not(:hover) {
+  //   @extend .u-ov-hidden;
+  // }
+
+  // &:hover {
+  //   @extend .u-ovx-auto;
+  // }
 }

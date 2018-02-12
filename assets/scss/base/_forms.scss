@@ -97,7 +97,8 @@ select {
 
 [type="text"],
 [type="email"],
-[type="password"] {
+[type="password"],
+[type="file"] {
   @extend .u-block;
   @extend .u-width-100pc;
   @extend .u-pv-1bl;

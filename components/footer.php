@@ -12,7 +12,7 @@
             </optgroup>
         </select>
 
-        <a href="/invite" class="u-color-playdough">Invite player</a>
+        <a href="/invite-player.php" class="u-color-playdough">Invite player</a>
 
     </div>
 

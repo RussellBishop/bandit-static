@@ -6,7 +6,7 @@
 
         <?php
             $view = 'club';
-            $page = 'results';
+            $page = 'matches';
             include('components/header.php');
         ?>
 
@@ -14,14 +14,14 @@
 
             <div class="o-container u-ph-1bl u-vspace-2bl">
 
-                <a href="/results.php" class="u-color-playdough">Back to Results</a>
+                <a href="/matches.php" class="u-color-playdough">Back to Matches</a>
 
                 <header class="o-container">
 
                 <div class="u-flex u-ai-center u-jc-between">
 
                     <div class="u-vspace-06r">
-                        <h1 class="u-size-h1 u-color-white">Add Results</h1>
+                        <h1 class="u-size-h1 u-color-white">Add Matches</h1>
                         <h2 class="u-size-h4">Get those games in, Stephen!</h2>
                     </div>
 
