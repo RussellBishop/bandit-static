@@ -15,7 +15,7 @@
             <header class="o-container u-ph-1bl u-vspace-06r">
 
                 <h1 class="u-size-h1 u-color-white">Clubs</h1>
-                <h2 class="u-size-h4">Need to jump into a different tribe?</h2>
+                <h2 class="u-size-h4">Jump into a different tribe.</h2>
 
             </header>
 
@@ -32,7 +32,9 @@
 
                 </div>
 
+                <a href="/create-club.php" class="c-button c-button--default">Create a club</a>
             </section>
+
 
             <?php include('components/footer-player.php'); ?>
 

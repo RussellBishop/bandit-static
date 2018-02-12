@@ -86,15 +86,6 @@
 
             <section>
 
-                <style>
-                    #open-dispute {
-                        display: none;
-                    }
-                    #open-dispute:target {
-                        display: block;
-                    }
-                </style>
-
                 <section id="open-dispute" class="u-vspace-2bl">
 
                     <div class="o-container u-ph-1bl">
@@ -110,9 +101,11 @@
                         <div class="u-vspace-2bl">
 
                             <div class="u-flex u-ai-center u-ph-1bl u-hspace-05bl u-size-14px">
-                                <span>Disputed by</span>
-                                <?php $photoWidth = 2; include('components/player-photo.php'); ?>
-                                <span class="o-dictate">Christy Quinn</span>
+                                <span class="u-flex u-ai-center u-hspace-05bl">
+                                    <?php $photoWidth = 2; include('components/player-photo.php'); ?>
+                                    <span> Christy</span>
+                                </span>
+                                <span>disputed the score and submitted a new score:</span>
                             </div>
 
                             <div class="u-borrad-first-2200 u-borrad-last-0022">

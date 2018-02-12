@@ -3,7 +3,12 @@
     $losingScore = max($winningScore - rand(1,4), 0);
 ?>
 
-<li class="u-bgcolor-fold">
+<li class="u-pos-relative u-bgcolor-fold">
+
+    <?php if ($i % 4 == 0) : ?>
+        <div class="o-absolute-fill u-borrad-inherit u-shadow-you u-pointer-none"></div>
+    <?php endif; ?>
+
     <a href="/single-result.php" class="u-flex u-ai-center u-pv-1bl u-ph-1bl u-color-paste">
 
         <div class="u-grow-1 u-basis-0 u-flex u-ai-center u-jc-center u-order-2 u-align-center u-hspace-1bl">

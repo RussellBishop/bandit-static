@@ -19,7 +19,7 @@
                 <header class="u-vspace-06r">
 
                     <h1 class="u-size-h1 u-color-white">Invite Player</h1>
-                    <h2 class="u-size-h4">Friendships end &mdash; where Bandit begins.</h2>
+                    <h2 class="u-size-h4">Friendships end where Bandit begins.</h2>
 
                 </header>
 

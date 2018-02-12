@@ -1,4 +1,9 @@
-<li class="u-bgcolor-fold <?=($i != 2) ? 'u-opac-05 u-opac-1@hover' : ''?>">
+<li class="u-pos-relative u-bgcolor-fold <?=($i != 2) ? 'u-opac-05 u-opac-1@hover' : ''?>">
+
+    <?php if ($i == 2) : ?>
+        <div class="o-absolute-fill u-borrad-inherit u-shadow-you u-pointer-none"></div>
+    <?php endif; ?>
+
     <a href="/single-player.php" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
 
         <div class="u-mr-1bl">
