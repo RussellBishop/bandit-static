@@ -1,0 +1,6 @@
+{
+    "browserSync": {
+        "proxy": "0.0.0.0"
+    },
+    "notifications": true
+}
