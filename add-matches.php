@@ -18,16 +18,16 @@
 
                 <header class="o-container">
 
-                <div class="u-flex u-ai-center u-jc-between">
+                    <div class="u-flex u-ai-center u-jc-between">
 
-                    <div class="u-vspace-06r">
-                        <h1 class="u-size-h1 u-color-white">Add Matches</h1>
-                        <h2 class="u-size-h4">Get those games in, Stephen!</h2>
+                        <div class="u-vspace-06r">
+                            <h1 class="u-size-h1 u-color-white">Add Matches</h1>
+                            <h2 class="u-size-h4">Get those games in, Stephen!</h2>
+                        </div>
+
                     </div>
 
-                </div>
-
-            </header>
+                </header>
 
             </div>
 
