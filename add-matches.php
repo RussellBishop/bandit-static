@@ -51,7 +51,7 @@
                         <span>Monday 11th January 2017</span>
                     </div>
 
-                    <a href="#add-result" class="c-button" disabled>Add Result</a>
+                    <a href="#add-result" class="c-button c-button--default">Add Result</a>
 
                 </div>
 

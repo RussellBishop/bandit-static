@@ -5,7 +5,7 @@
     <div class="o-window">
 
         <?php
-            $view = 'player';
+            $view = 'club';
             $page = 'profile';
             include('components/header.php');
         ?>
@@ -71,7 +71,7 @@
                                 </div>
 
                                 <div class="u-grow-1 u-basis-0 u-vspace-03r u-pv-1bl u-ph-1bl">
-                                    <dt class="u-color-paste u-weight-bold">Ratio</dt>
+                                    <dt class="u-color-paste u-weight-bold">Win Ratio</dt>
                                     <dd class="u-flex u-ai-center u-hspace-8px u-size-13px">
                                         <span class="u-color-paste"><?= round(rand(5,10) / rand(1,4), 2) ?></span>
                                     </dd>
@@ -124,7 +124,7 @@
             <section id="results" class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Results</h1>
+                    <h1 class="u-size-h2 u-color-white">Matches</h1>
                     <a href="/profile-matches.php" class="c-go u-color-playdough">See all</a>
                 </header>
 
@@ -151,7 +151,7 @@
                     <?php
 
                         for ($i = 1; $i < 4; $i++) {
-                            include('components/weekly-leaderboard-row.php');
+                            include('components/weekly-leaderboard-row-maybe-you.php');
                         }
 
                     ?>
@@ -170,7 +170,7 @@
                     <?php
 
                         for ($i = 1; $i < 4; $i++) {
-                            include('components/alltime-leaderboard-row.php');
+                            include('components/alltime-leaderboard-row-maybe-you.php');
                         }
 
                     ?>

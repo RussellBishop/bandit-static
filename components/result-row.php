@@ -19,7 +19,7 @@
             ?>
 
             <dt class="u-size-h4 u-weight-bold u-ws-no">
-                <span class="o-dictate">Jane Austin </span> <?=$winningScore?> &ndash; <span class="o-dictate">Michael Hamlet </span><?=$losingScore?>
+                <span class="o-dictate"><?php randomName(); ?> </span> <?=$winningScore?> &ndash; <span class="o-dictate"><?php randomName(); ?> </span><?=$losingScore?>
             </dt>
 
             <?php
@@ -31,14 +31,14 @@
 
         <div class="u-grow-1 u-basis-0 u-order-1 u-align-left o-ellipsis">
 
-            <span aria-hidden="true">Jane</span>
+            <span aria-hidden="true"><?php randomFirst(); ?></span>
 
         </div>
 
 
         <div class="u-grow-1 u-basis-0 u-order-3 u-align-right o-ellipsis">
 
-            <span aria-hidden="true">Michael</span>
+            <span aria-hidden="true"><?php randomFirst(); ?></span>
 
         </div>
 

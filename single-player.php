@@ -54,7 +54,7 @@
             <section id="results" class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
-                    <h1 class="u-size-h2 u-color-white">Results</h1>
+                    <h1 class="u-size-h2 u-color-white">Matches</h1>
                     <a href="/single-player-matches.php" class="c-go u-color-playdough">See all</a>
                 </header>
 

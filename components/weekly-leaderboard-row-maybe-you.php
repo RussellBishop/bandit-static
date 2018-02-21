@@ -4,13 +4,18 @@
 
 ?>
 
-<li class="u-pos-relative u-bgcolor-fold">
+<li class="u-pos-relative u-bgcolor-fold <?=($i != 1) ? 'u-opac-05 u-opac-1@hover' : ''?>">
+
+    <?php if ($i == 1) : ?>
+        <div class="o-absolute-fill u-borrad-inherit u-shadow-you u-pointer-none"></div>
+    <?php endif; ?>
 
     <a href="/single-player.php" class="u-flex u-ai-center u-pv-1bl u-ph-1bl">
 
         <div class="u-mr-1bl">
             <?php
                 $photoWidth = 3;
+                if ($i == 1) { $photoId = 54; }
                 include('components/player-photo.php');
             ?>
         </div>
@@ -20,8 +25,8 @@
                 <dt class="u-color-paste"><?php randomName(); ?></dt>
                 <dd class="u-flex u-ai-center u-hspace-4px u-size-13px">
                     <span class="u-color-win">+<?=$ptsGained?> <abbr title="rating points">pts.</abbr></span>
-                    <span><span class="o-dictate">from</span> <?= rand(5,14); ?> wins</span>
-                    <span><span class="o-dictate">and</span> <?= rand(5,14); ?> losses</span>
+                    <span><span class="o-dictate">from</span> 12 wins</span>
+                    <span><span class="o-dictate">and</span> 3 losses</span>
                 </dd>
             </div>
             <dd class="u-color-paste u-size-h4 u-weight-bold u-ws-no">#<?=$i?></dd>

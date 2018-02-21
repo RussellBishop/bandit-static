@@ -10,7 +10,7 @@
 
         <dl class="u-flex u-jc-between u-ai-center u-width-100pc">
             <div class="u-grow-1 u-vspace-03r">
-                <dt class="u-color-paste">Rebekah Reeves</dt>
+                <dt class="u-color-paste"><?php randomName(); ?></dt>
                 <dd class="u-flex u-ai-center u-hspace-8px u-size-13px">
                     <span class="u-flex u-ai-center u-hspace-8px">
                         <span class="u-flex u-ai-center u-hspace-4px">

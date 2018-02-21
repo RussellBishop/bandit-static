@@ -26,9 +26,9 @@
             <select <?php if ($disabled == true) { echo 'disabled'; } ?> class="u-color-playdough">
                 <option selected="" disabled>Opponent</option>
                 <optgroup label="Find player:">
-                    <option>Andrew Berkheardt</option>
-                    <option>Betty Praline</option>
-                    <option>Charice Melontown</option>
+                    <?php for ($i = 1; $i < 15; $i++) : ?>
+                        <option><?php randomName(); ?></option>
+                    <?php endfor; ?>
                 </optgroup>
             </select>
 

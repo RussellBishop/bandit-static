@@ -12,6 +12,8 @@
 
         <main class="o-main">
 
+            <?php /*
+
             <section id="disputes" class="o-container">
 
                 <header class="u-ph-1bl">
@@ -26,6 +28,8 @@
                 </dl>
 
             </section>
+
+            */ ?>
 
             <section id="matches" class="o-container">
 
