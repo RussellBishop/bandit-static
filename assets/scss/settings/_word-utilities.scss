@@ -54,6 +54,10 @@ $wordUtilitiesSettings: (
         value: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%),
         valueClass: 'hexagon',
       ),
+      (
+        value: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%),
+        valueClass: 'hexagon-flat',
+      ),
     ),
   ),
   (
@@ -374,6 +378,16 @@ $wordUtilitiesSettings: (
       (
         value: nowrap,
         valueClass: no,
+      ),
+    ),
+  ),
+  (
+    property: 'will-change',
+    propertyClass: 'will-',
+
+    values: (
+      (
+        value: 'transform',
       ),
     ),
   ),

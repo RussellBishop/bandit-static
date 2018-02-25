@@ -3,18 +3,15 @@
  */
 
 $component: 'loading';
-$max: 6;
-$deg: 60deg;
 
 #{'.' + $iota-global-components-namespace + $component} {
   animation: loadingRotateSteps calc(var(--cycleTime) * 4) infinite ease-in-out;
-  animation-delay: 0s;
 
   &__hexagon {
-    clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    transform: rotate($deg / 2);
+    @extend .u-clip-hexagon-flat;
     width: var(--loadingWidth);
     height: calc(var(--loadingWidth) * .85);
+    transform: rotate($loadingDegrees / 2);
   }
 
   &__line {
@@ -24,6 +21,7 @@ $deg: 60deg;
       @extend %no-content;
       @extend .u-pos-absolute;
       @extend .u-top-0;
+      @extend .u-will-transform;
       left: calc(25% - (var(--lineWidth) / 2));
       width: calc(50% + var(--lineWidth));
       height: var(--lineWidth);
@@ -31,12 +29,11 @@ $deg: 60deg;
       transform: scaleX(0);
       transform-origin: 0 0;
       animation: loadingLineGrow calc(var(--cycleTime) * 3) infinite;
-      will-change: transform;
     }
 
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
-        transform: rotate(($i - 1) * $deg);
+        transform: rotate(($i - 1) * $loadingDegrees);
 
         &:before {
           animation-delay: calc((var(--cycleTime) / 2) * #{$i - 1});
@@ -44,18 +41,9 @@ $deg: 60deg;
       }
     }
 
-    $lineColours: (
-      $colour-orange,
-      $colour-scout,
-      $colour-warrior,
-      $colour-god,
-      $colour-fighter,
-      $colour-ninja,
-    );
+    @each $colour in $loadingLineColours {
 
-    @each $colour in $lineColours {
-
-      $i: index($lineColours, $colour);
+      $i: index($loadingLineColours, $colour);
 
       &:nth-child(#{$i}) {
         --lineColour: $colour;
@@ -66,19 +54,19 @@ $deg: 60deg;
 
 @keyframes loadingRotateSteps {
 
-  @for $i from 1 through $max {
+  @for $i from 1 through $loadingSides {
 
     $percentageStart: percentage(1 / 12 * ($i * 2 - 2));
     $percentageEnd: percentage(1 / 12 * ($i * 2 - 1));
 
     #{$percentageStart},
     #{$percentageEnd} {
-      transform: rotate(($i - 1) * $deg);
+      transform: rotate(($i - 1) * $loadingDegrees);
     }
   }
 
   100% {
-    transform: rotate($max * $deg);
+    transform: rotate($loadingSides * $loadingDegrees);
   }
 }
 

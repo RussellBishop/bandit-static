@@ -51,7 +51,7 @@
                         <span>Monday 11th January 2017</span>
                     </div>
 
-                    <a href="#add-result" class="c-button c-button--default c-button--loading">
+                    <a href="#add-result" class="c-button c-button--loading">
                         <div class="o-abscentre u-z-2">
                             <div
                             class="c-loading"
