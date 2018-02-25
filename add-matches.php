@@ -51,7 +51,22 @@
                         <span>Monday 11th January 2017</span>
                     </div>
 
-                    <a href="#add-result" class="c-button c-button--default">Add Result</a>
+                    <a href="#add-result" class="c-button c-button--default c-button--loading">
+                        <div class="o-abscentre u-z-2">
+                            <div
+                            class="c-loading"
+                            style="--loadingWidth: 2rem; --lineWidth: 20%; --cycleTime: 0.6s;">
+                                <div class="c-loading__hexagon">
+                                    <span class="c-loading__line"></span>
+                                    <span class="c-loading__line"></span>
+                                    <span class="c-loading__line"></span>
+                                    <span class="c-loading__line"></span>
+                                    <span class="c-loading__line"></span>
+                                    <span class="c-loading__line"></span>
+                                </div>
+                            </div>
+                        </div>
+                    Add Result</a>
 
                 </div>
 

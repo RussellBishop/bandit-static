@@ -31,20 +31,7 @@
 
             */ ?>
 
-            <section id="matches" class="o-container u-pos-relative">
-
-                <div class="o-abscentre u-z-2">
-                    <div class="c-loading">
-                        <div class="c-loading__hexagon">
-                            <span class="c-loading__line c-loading__line--r"></span>
-                            <span class="c-loading__line c-loading__line--br"></span>
-                            <span class="c-loading__line c-loading__line--bl"></span>
-                            <span class="c-loading__line c-loading__line--l"></span>
-                            <span class="c-loading__line c-loading__line--tl"></span>
-                            <span class="c-loading__line c-loading__line--tr"></span>
-                        </div>
-                    </div>
-                </div>
+            <section id="matches" class="o-container">
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">Matches</h1>

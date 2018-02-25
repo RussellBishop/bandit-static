@@ -3,133 +3,82 @@
  */
 
 $component: 'loading';
-
-.u-ani {
-}
+$max: 6;
+$deg: 60deg;
 
 #{'.' + $iota-global-components-namespace + $component} {
-  animation: loadingRotateSteps 2.4s infinite ease-in-out;
+  animation: loadingRotateSteps calc(var(--cycleTime) * 4) infinite ease-in-out;
   animation-delay: 0s;
 
   &__hexagon {
-    --loadingWidth: 65px;
     clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
-    transform: rotate(30deg);
+    transform: rotate($deg / 2);
     width: var(--loadingWidth);
     height: calc(var(--loadingWidth) * .85);
   }
 
   &__line {
     @extend .o-absfill;
-    --lineWidth: 10%;
 
     &:before {
       @extend %no-content;
       @extend .u-pos-absolute;
-      top: 0;
+      @extend .u-top-0;
       left: calc(25% - (var(--lineWidth) / 2));
       width: calc(50% + var(--lineWidth));
       height: var(--lineWidth);
+      background-color: var(--lineColour);
       transform: scaleX(0);
       transform-origin: 0 0;
-      animation: loadingLineGrow 1.8s infinite;
+      animation: loadingLineGrow calc(var(--cycleTime) * 3) infinite;
       will-change: transform;
     }
 
     @for $i from 1 through 6 {
       &:nth-child(#{$i}) {
+        transform: rotate(($i - 1) * $deg);
+
         &:before {
-          animation-delay: .3s * ($i - 1);
+          animation-delay: calc((var(--cycleTime) / 2) * #{$i - 1});
         }
       }
     }
 
-    &--tr {
-      transform: rotate(0deg);
+    $lineColours: (
+      $colour-orange,
+      $colour-scout,
+      $colour-warrior,
+      $colour-god,
+      $colour-fighter,
+      $colour-ninja,
+    );
 
-      &:before {
-        background: #FF7048;
-      }
-    }
+    @each $colour in $lineColours {
 
-    &--r {
-      transform: rotate(60deg);
+      $i: index($lineColours, $colour);
 
-      &:before {
-        background: #97F7E6;
-        background: #0DC4E0;
-      }
-    }
-
-    &--br {
-      transform: rotate(120deg);
-
-      &:before {
-        background: #24E25D;
-      }
-    }
-
-    &--bl {
-      transform: rotate(180deg);
-
-      &:before {
-        background: #F7B874;
-        background: #FF7048;
-      }
-    }
-
-    &--l {
-      transform: rotate(240deg);
-
-      &:before {
-        background: #0DC4E0;
-      }
-    }
-
-    &--tl {
-      transform: rotate(300deg);
-
-      &:before {
-        background: #BDF896;
-        background: #24E25D;
+      &:nth-child(#{$i}) {
+        --lineColour: $colour;
       }
     }
   }
 }
 
 @keyframes loadingRotateSteps {
-  0%,
-  8.33% {
-    transform: rotate(0deg);
-  }
 
-  16.66%,
-  25% {
-    transform: rotate(60deg);
-  }
+  @for $i from 1 through $max {
 
-  33.33%,
-  41.66% {
-    transform: rotate(120deg);
-  }
+    $percentageStart: percentage(1 / 12 * ($i * 2 - 2));
+    $percentageEnd: percentage(1 / 12 * ($i * 2 - 1));
 
-  50%,
-  58.33% {
-    transform: rotate(180deg);
-  }
-
-  66.66%,
-  75% {
-    transform: rotate(240deg);
-  }
-
-  83.33%,
-  91.66% {
-    transform: rotate(300deg);
+    #{$percentageStart},
+    #{$percentageEnd} {
+      transform: rotate(($i - 1) * $deg);
+    }
   }
 
   100% {
-    transform: rotate(360deg);
+    transform: rotate($max * $deg);
   }
 }
 
@@ -154,6 +103,5 @@ $component: 'loading';
 
   100% {
     transform: scaleX(0);
-    // background: $colour-white;
   }
 }
