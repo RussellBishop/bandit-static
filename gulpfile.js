@@ -60,6 +60,7 @@ elixir(function(mix) {
      * Compiles assets/scss/style.scss to dist/css/style.css.
      */
     mix.sass('main.scss');
+    mix.sass('home.scss');
 
     /**
      * SVG Symbols

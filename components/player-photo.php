@@ -27,7 +27,7 @@
         <svg class="c-player-photo__knot u-z-1 u-pos-absolute u-top-0 u-left-0 u-width-1bl u-height-auto" width="36" height="31" viewBox="0 0 36 31"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/dist/svg/sprite.svg#logo-knot"></use></svg>
     <?php endif; ?>
 
-    <div class="c-player-photo u-width-<?=$photoWidth?>bl" style="background-image: url('https://randomuser.me/api/portraits/men/<?php if(isset($photoId)){echo $photoId;}else{echo rand(1,99);}?>.jpg');">
+    <div class="c-player-photo u-width-<?=$photoWidth?>bl" <?php /* style="background-image: url('https://randomuser.me/api/portraits/men/<?php if(isset($photoId)){echo $photoId;}else{echo rand(1,99);}?>.jpg');" */ ?>>
         <div class="c-player-photo__level u-bgcolor-<?=$level?>"></div>
 
         <?php if($level == 'god') : ?>

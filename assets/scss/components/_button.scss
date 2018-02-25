@@ -45,7 +45,7 @@ $component: 'button';
     &:before {
       // gradient border
       @extend %no-content;
-      @extend .o-absolute-fill;
+      @extend .o-absfill;
       border-width: 2px;
       border-style: solid;
       border-image: linear-gradient(to bottom, $colour-satsuma, $colour-orange) 1 100%;

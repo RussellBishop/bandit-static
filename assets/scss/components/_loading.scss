@@ -1,0 +1,159 @@
+/**
+ * .c-loading
+ */
+
+$component: 'loading';
+
+.u-ani {
+}
+
+#{'.' + $iota-global-components-namespace + $component} {
+  animation: loadingRotateSteps 2.4s infinite ease-in-out;
+  animation-delay: 0s;
+
+  &__hexagon {
+    --loadingWidth: 65px;
+    clip-path: polygon(25% 0%, 75% 0, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    transform: rotate(30deg);
+    width: var(--loadingWidth);
+    height: calc(var(--loadingWidth) * .85);
+  }
+
+  &__line {
+    @extend .o-absfill;
+    --lineWidth: 10%;
+
+    &:before {
+      @extend %no-content;
+      @extend .u-pos-absolute;
+      top: 0;
+      left: calc(25% - (var(--lineWidth) / 2));
+      width: calc(50% + var(--lineWidth));
+      height: var(--lineWidth);
+      transform: scaleX(0);
+      transform-origin: 0 0;
+      animation: loadingLineGrow 1.8s infinite;
+      will-change: transform;
+    }
+
+    @for $i from 1 through 6 {
+      &:nth-child(#{$i}) {
+        &:before {
+          animation-delay: .3s * ($i - 1);
+        }
+      }
+    }
+
+    &--tr {
+      transform: rotate(0deg);
+
+      &:before {
+        background: #FF7048;
+      }
+    }
+
+    &--r {
+      transform: rotate(60deg);
+
+      &:before {
+        background: #97F7E6;
+        background: #0DC4E0;
+      }
+    }
+
+    &--br {
+      transform: rotate(120deg);
+
+      &:before {
+        background: #24E25D;
+      }
+    }
+
+    &--bl {
+      transform: rotate(180deg);
+
+      &:before {
+        background: #F7B874;
+        background: #FF7048;
+      }
+    }
+
+    &--l {
+      transform: rotate(240deg);
+
+      &:before {
+        background: #0DC4E0;
+      }
+    }
+
+    &--tl {
+      transform: rotate(300deg);
+
+      &:before {
+        background: #BDF896;
+        background: #24E25D;
+      }
+    }
+  }
+}
+
+@keyframes loadingRotateSteps {
+  0%,
+  8.33% {
+    transform: rotate(0deg);
+  }
+
+  16.66%,
+  25% {
+    transform: rotate(60deg);
+  }
+
+  33.33%,
+  41.66% {
+    transform: rotate(120deg);
+  }
+
+  50%,
+  58.33% {
+    transform: rotate(180deg);
+  }
+
+  66.66%,
+  75% {
+    transform: rotate(240deg);
+  }
+
+  83.33%,
+  91.66% {
+    transform: rotate(300deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loadingLineGrow {
+  0% {
+    transform: scaleX(0);
+  }
+
+  0%,
+  50% {
+    transform-origin: 0 0;
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
+
+  50.1%,
+  100% {
+    transform-origin: 100% 0;
+  }
+
+  100% {
+    transform: scaleX(0);
+    // background: $colour-white;
+  }
+}
