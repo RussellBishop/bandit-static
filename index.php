@@ -35,7 +35,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">Matches</h1>
-                    <a href="/matches.php" class="c-go u-color-playdough">go to</a>
+                    <a href="/matches.php" class="c-go">Go</a></a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
@@ -58,7 +58,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">Weekly <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/leaderboards.php" class="c-go u-color-playdough">go to</a>
+                    <a href="/leaderboards.php" class="c-go">Go</a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
@@ -77,7 +77,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">All time <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/leaderboards.php" class="c-go u-color-playdough">go to</a>
+                    <a href="/leaderboards.php" class="c-go">Go</a></a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">

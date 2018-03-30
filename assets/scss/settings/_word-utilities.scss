@@ -69,6 +69,9 @@ $wordUtilitiesSettings: (
         value: 'flex',
       ),
       (
+        value: 'inline-flex',
+      ),
+      (
         value: 'block',
       ),
     ),
@@ -248,6 +251,10 @@ $wordUtilitiesSettings: (
         valueClass: 'hotmelon',
       ),
       (
+        value: $colour-basement,
+        valueClass: 'basement',
+      ),
+      (
         value: $colour-win,
         valueClass: 'win',
       ),
@@ -315,6 +322,10 @@ $wordUtilitiesSettings: (
       (
         value: $colour-rookie,
         valueClass: 'rookie',
+      ),
+      (
+        value: $colour-puss,
+        valueClass: 'puss',
       ),
     ),
   ),

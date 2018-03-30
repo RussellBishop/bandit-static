@@ -14,7 +14,7 @@
 
             <div class="o-container u-ph-1bl u-vspace-2bl">
 
-                <a href="/players.php" class="u-color-playdough">Back to Players</a>
+                <a href="/players.php" class="c-go">Back</a>
 
                 <header class="u-flex u-ai-center">
 
@@ -55,7 +55,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">Matches</h1>
-                    <a href="/single-player-matches.php" class="c-go u-color-playdough">See all</a>
+                    <a href="/single-player-matches.php" class="c-go">Go</a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
@@ -74,7 +74,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">Weekly <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/leaderboards.php" class="c-go u-color-playdough">See all</a>
+                    <a href="/leaderboards.php" class="c-go">Go</a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">
@@ -93,7 +93,7 @@
 
                 <header class="u-flex u-jc-between u-ai-center u-ph-1bl">
                     <h1 class="u-size-h2 u-color-white">All time <span class="u-color-steam">leaderboard</span></h1>
-                    <a href="/leaderboards.php" class="c-go u-color-playdough">See all</a>
+                    <a href="/leaderboards.php" class="c-go">Go</a>
                 </header>
 
                 <ol class="u-mt-1bl u-vspace-1px u-borrad-first-2200 u-borrad-last-0022">

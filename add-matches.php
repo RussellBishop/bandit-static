@@ -14,9 +14,9 @@
 
             <div class="o-container u-ph-1bl u-vspace-2bl">
 
-                <a href="/matches.php" class="u-color-playdough">Back to Matches</a>
+                <a href="/matches.php" class="c-go c-go--default">Back</a>
 
-                <header class="o-container">
+                <header>
 
                     <div class="u-flex u-ai-center u-jc-between">
 
@@ -31,7 +31,23 @@
 
             </div>
 
-            <hr class="c-hr" />
+            <div class="c-info">
+
+                <div class="o-container u-ph-1bl u-pv-2bl u-color-puss u-line-105">
+
+                    <h3 class="u-size-h4">What’s the score <em>if</em>&hellip;?</h3>
+
+                    <ol class="u-vspace-mt-">
+                        <li>You won <strong class="u-color-white">5 games</strong></li>
+                        <li>Your opponent won <strong class="u-color-white">3 games</strong></li>
+                        <li>Score is <strong class="u-color-white">5 &ndash; 3</strong></li>
+                    </ol>
+
+                </div>
+
+            </div>
+
+            <?php /* hr class="c-hr" /> */ ?>
 
             <section class="o-container u-vspace-3bl">
 
@@ -41,21 +57,24 @@
                         <div title>
                             <?php include('components/add-result-row.php'); ?>
                         </div>
+                        <?php /*
                         <div title class="u-opac-02">
                             <?php $disabled = true; ?>
                             <?php include('components/add-result-row.php'); ?>
                         </div>
+                        */ ?>
                     </div>
 
                     <div class="u-flex u-ai-center u-ph-1bl u-hspace-05bl u-size-14px">
                         <span>Monday 11th January 2017</span>
                     </div>
 
+                    <?php /*
                     <a href="#add-result" class="c-button c-button--loading">
                         <div class="o-abscentre u-z-2">
                             <div
                             class="c-loading"
-                            style="--loadingWidth: 2rem; --lineWidth: 20%; --cycleTime: 0.6s;">
+                            style="--loadingWidth: 2rem; --lineWidth: 20%; --cycleTime: 0.4s;">
                                 <div class="c-loading__hexagon">
                                     <span class="c-loading__line"></span>
                                     <span class="c-loading__line"></span>
@@ -67,6 +86,9 @@
                             </div>
                         </div>
                     Add Result</a>
+                    */ ?>
+
+                    <a href="#add-result" class="c-button c-button--default">Add Result</a>
 
                 </div>
 
